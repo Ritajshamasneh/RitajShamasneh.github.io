@@ -106,32 +106,6 @@
         }
       }).addTo(map);
     });
-
-    // إضافة صورة كـ marker على الخريطة
-    const customIcon = L.icon({
-      iconUrl: 'https://h.top4top.io/p_3231qnfr31.png',  // رابط الصورة التي زودتني بها
-      iconSize: [50, 50],  // حجم الصورة
-      iconAnchor: [25, 50],  // نقطة الارتكاز في الصورة
-      popupAnchor: [0, -50]  // مكان النافذة المنبثقة
-    });
-
-    // إضافة marker باستخدام الصورة
-    L.marker([31.9045, 35.2045], { icon: customIcon }).addTo(map)
-      .bindPopup('هذه هي صورة على الخريطة');
-
-    // إضافة تحكم بالطبقات
-    const baseLayers = {};
-    const overlays = {
-      "Zones": zonesLayer,
-      "Waste Containers": wasteContainersLayer
-    };
-
-    // إضافة تحكم بالطبقات إلى الخريطة
-    L.control.layers(baseLayers, overlays).addTo(map);
-
-    // إضافة الطبقات إلى الخريطة بشكل افتراضي
-    zonesLayer.addTo(map);
-    wasteContainersLayer.addTo(map);
   </script>
 </body>
 
