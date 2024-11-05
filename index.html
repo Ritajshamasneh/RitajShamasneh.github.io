@@ -22,12 +22,12 @@
       bottom: 120px; /* ترك مساحة أكبر أسفل الخريطة لصورة */
     }
 
-    /* style the small image container (على اليسار أسفل الصفحة) */
+    /* style the small image container (على اليمين من أعلى الصفحة) */
     #small-image-container {
       position: absolute;
-      bottom: 10px; /* جعل الصورة الصغيرة أسفل الخريطة */
-      left: 10px;
-      text-align: left;
+      top: 10px; /* وضع الصورة في الأعلى */
+      right: 10px; /* وضع الصورة على اليمين */
+      text-align: right;
       width: auto;
       display: inline-block;
       background-color: transparent; /* إزالة أي خلفية غير مرغوب فيها */
@@ -36,8 +36,8 @@
     }
 
     #small-image-container img {
-      width: 150px; /* تكبير الصورة الصغيرة */
-      height: auto;
+      width: 150px; /* تحديد عرض الصورة */
+      height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
       display: block; /* التأكد من أن الصورة لا تمتد أفقيًا */
     }
   </style>
