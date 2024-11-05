@@ -22,18 +22,17 @@
       bottom: 100px; /* اترك مساحة أسفل الخريطة لصورة */
     }
 
-    /* style the image container */
+    /* style the image container (على اليسار أسفل الصفحة) */
     #image-container {
       position: absolute;
       bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      width: 100%;
+      left: 10px; /* تحديد الصورة في اليسار */
+      text-align: left;
+      width: auto;
     }
 
     #image-container img {
-      max-width: 100%;
+      max-width: 200px; /* تحديد الحجم الأقصى للصورة */
       height: auto;
     }
   </style>
@@ -43,10 +42,9 @@
   <!-- the map -->
   <div id="map"></div>
 
-  <!-- image container -->
+  <!-- image container (على اليسار أسفل الصفحة) -->
   <div id="image-container">
-    <img src="https://f.top4top.io/p_3231mwus71.png" alt="Map Image">
-    <!-- هنا صورة اسفل الموقع -->
+    <img src="https://h.top4top.io/p_3231qnfr31.png" alt="Map Image">
   </div>
 
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -111,7 +109,7 @@
 
     // إضافة صورة كـ marker على الخريطة
     const customIcon = L.icon({
-      iconUrl: 'https://f.top4top.io/p_3231mwus71.png',  // رابط الصورة التي زودتني بها
+      iconUrl: 'https://h.top4top.io/p_3231qnfr31.png',  // رابط الصورة التي زودتني بها
       iconSize: [50, 50],  // حجم الصورة
       iconAnchor: [25, 50],  // نقطة الارتكاز في الصورة
       popupAnchor: [0, -50]  // مكان النافذة المنبثقة
@@ -136,6 +134,8 @@
     wasteContainersLayer.addTo(map);
   </script>
 </body>
+
+</html>
 
 </html>
 
