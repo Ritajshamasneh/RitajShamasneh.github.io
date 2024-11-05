@@ -23,30 +23,16 @@
     }
 
     /* style the image container (على اليسار أسفل الصفحة) */
-    #image-container {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      text-align: left;
-      width: auto;
-    }
-
-    #image-container img {
-      max-width: 200px; /* تحديد الحجم الأقصى للصورة الأولى */
-      height: auto;
-      display: block;
-    }
-
     #small-image-container {
       position: absolute;
-      bottom: 5px; /* جعل الصورة الصغيرة أسفل الصورة الكبيرة */
+      bottom: 10px; /* جعل الصورة الصغيرة أسفل الخريطة */
       left: 10px;
       text-align: left;
       width: auto;
     }
 
     #small-image-container img {
-      width: 100px; /* تحديد عرض الصورة الصغيرة */
+      width: 150px; /* تكبير الصورة الصغيرة */
       height: auto;
     }
   </style>
@@ -56,12 +42,7 @@
   <!-- the map -->
   <div id="map"></div>
 
-  <!-- image container (على اليسار أسفل الصفحة) -->
-  <div id="image-container">
-    <img src="https://h.top4top.io/p_3231qnfr31.png" alt="Map Image">
-  </div>
-
-  <!-- small image container (أسفل الصورة الرئيسية) -->
+  <!-- small image container (أسفل الخريطة) -->
   <div id="small-image-container">
     <img src="https://c.top4top.io/p_323100q6l1.png" alt="Small Image">
   </div>
@@ -129,5 +110,4 @@
 </body>
 
 </html>
-
 
